@@ -1,0 +1,69 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">AA</div>
+      <h1>Schedule</h1>
+      <table>
+        <thead>
+          <th>Time</th>
+          <th>Location</th>
+          <th>Details</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00</td>
+            <td>Club Lounge</td>
+            <td>Breakfast</td>
+          </tr>
+          <tr>
+            <td>1:00</td>
+            <td>Ceremoney</td>
+            <td>Chicago Cultural Center</td>
+          </tr>
+          <tr>
+            <td>3:00</td>
+            <td>Cocktails</td>
+            <td>Terrace</td>
+          </tr>
+          <tr>
+            <td>4:00</td>
+            <td>Recepetion</td>
+            <td>Ballroom</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>After Party</td>
+            <td>Meet in Lobby for Shuttle to the Bedford</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1'
+    });
+  </script>
+</dom-module>
